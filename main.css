@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 10vh auto;
+  width: 80%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__header h1 {
+  font-size: 32px;
+  color: rgb(221, 179, 39)
+}
+
+.top__header h1 span {
+  color: rgb(133, 27, 27)
+}
+
+.top__search input {
+  padding: 10px 20px;
+  border: 0;
+  border-bottom: 2px solid rgb(170, 37, 37);
+  font-size: 18px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.top__search input:focus {
+  border-color: rgb(219, 176, 34)
+}
+
+.cards-container {
+  margin: 10vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards-container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 20px 10vh;
+  flex-basis: 20%;
+}
+
+.cards-container div .left {
+  display: block;
+  font-weight: bold;
+  line-height: 0.5rem;
+}
+
+.cards-container div .right {
+  display: block;
+  font-size: 0.8rem;
+}
+
+.cards-container div img {
+  width: 100%;
+  margin: 2px 0;
+}
+
+.cards-container div p {
+  font-size: 0.8rem;
+  margin: 1px 0;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+.show-more {
+  display: block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  background-color: rgb(221, 179, 39);
+  border: 2px solid rgb(221, 179, 39);
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color .3s, color .3s;
+  -webkit-transition: background-color .3s, color .3s;
+}
+
+.show-more:hover {
+  background-color: #fff;
+  color: rgb(221, 179, 39)
+}
+
+.cards-container div .inactive {
+  display: none;
+}
